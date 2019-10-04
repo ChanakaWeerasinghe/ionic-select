@@ -13,10 +13,19 @@
       
     </ion-item>
 
+  
+
        <ion-item>
         <ion-label>Card</ion-label>
         <ion-select [(ngModel)]="selectedCard">
             <ion-option *ngFor="let card of cardList" >{{card.cardHolderName}}</ion-option>
         </ion-select>
     </ion-item>
+
+
+      <select class="form-control search-head" [(ngModel)]="selected_month">
+   <!-- <option disabled value="1" [selected]=true>Choose Category</option> -->
+   <option [value]="m" *ngFor="let m of months">{{m}}
+   </option>
+</select>
 </ion-content>

@@ -20,6 +20,8 @@ cardList= [{cardNumber: "2222 22** **** 2222", expireDate: "8/19", cardHolderNam
 
 constructor()
 {
+this.selected_month="Feb";
+
 this.selectedCard={cardNumber: "2222 22** **** 2222", expireDate: "8/19", cardHolderName: "Benefit 1", balance: Array(1), instrumentID: "1826"}
 }
 }
