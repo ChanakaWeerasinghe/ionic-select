@@ -1,29 +1,29 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>Home</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-item>
-      <ion-label>Date</ion-label>
-      <ion-select [(ngModel)]="selected_month">
-        <ion-option *ngFor="let m of months" value="{{m}}" [selected]="selected_month == m">{{ m }}</ion-option>
-      </ion-select>
-      
-    </ion-item>
+	<ion-item>
+		<ion-label>Date</ion-label>
+		<ion-select [(ngModel)]="selected_month">
+			<ion-option *ngFor="let m of months" value="{{m}}" [selected]="selected_month == m">{{ m }}</ion-option>
+		</ion-select>
 
-  
-
-       <ion-item>
-        <ion-label>Card</ion-label>
-        <ion-select [(ngModel)]="selectedCard">
-            <ion-option *ngFor="let card of cardList" >{{card.cardHolderName}}</ion-option>
-        </ion-select>
-    </ion-item>
+	</ion-item>
 
 
-      <select class="form-control search-head" [(ngModel)]="selected_month">
+
+	<ion-item>
+		<ion-label>Card</ion-label>
+		<ion-select [(ngModel)]="selectedCard">
+			<ion-option *ngFor="let card of cardList">{{card.cardHolderName}}</ion-option>
+		</ion-select>
+	</ion-item>
+
+
+	<select class="form-control search-head" [(ngModel)]="selected_month">
    <!-- <option disabled value="1" [selected]=true>Choose Category</option> -->
    <option [value]="m" *ngFor="let m of months">{{m}}
    </option>
